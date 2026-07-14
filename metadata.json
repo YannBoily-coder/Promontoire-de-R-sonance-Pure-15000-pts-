@@ -1,0 +1,6 @@
+{
+  "name": "Promontoire de Résonance Alpine",
+  "description": "Un sanctuaire sonore interactif simulant la résonance acoustique, les échos et l'atmosphère des sommets alpins.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

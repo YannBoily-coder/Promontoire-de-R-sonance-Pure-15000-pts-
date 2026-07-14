@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-alpine-950: #0b0e14;
+  --color-alpine-900: #111622;
+  --color-alpine-800: #1b2334;
+  --color-alpine-700: #2a354d;
+  --color-alpine-600: #3c4b6c;
+  --color-alpine-500: #57698f;
+  --color-alpine-400: #7d8fb8;
+  --color-alpine-300: #a7b7db;
+  --color-alpine-200: #cbd5e1;
+  --color-alpine-100: #f1f5f9;
+  --color-alpine-50: #f8fafc;
+}
+
+/* Custom styles for canvas and nice transitions */
+body {
+  background-color: #0b0e14;
+  color: #f8fafc;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Subtle glow animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 2px rgba(167, 183, 219, 0.2));
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 12px rgba(167, 183, 219, 0.6));
+  }
+}
+
+.mountain-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+  background: rgba(17, 22, 34, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
